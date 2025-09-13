@@ -1,0 +1,21 @@
+from tkinter import*
+def login ():
+    print ("Login succeful")
+
+mainwindow=Tk()
+mainwindow.geometry("300x300")
+mainwindow.title("Login")
+mainwindow.config(background="Yellow")
+username=Label(mainwindow,text="Username")
+username.place(x=50,y=55)
+usernamebox=Entry(mainwindow)
+usernamebox.place(x=120,y=55)
+password=Label(mainwindow,text="Password")
+password.place(x=50,y=80)
+passwordbox=Entry(mainwindow)
+passwordbox.place(x=120,y=80)
+loginbutton=Button(mainwindow,text="Login",command=login)
+loginbutton.place(x=100,y=150)
+closebutton=Button(mainwindow,text="Close",command=mainwindow.destroy)
+closebutton.place(x=150,y=150,)
+mainwindow.mainloop()
